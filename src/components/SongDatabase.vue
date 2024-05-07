@@ -28,7 +28,7 @@ export default {
                     title: `song a`,
                     artist: `artist a`,
                     song_id: 1,
-                    image_url: "@/assets/logo.png"
+                    image_url: "https://www.reshot.com/preview-assets/illustrations/RVNQBFTSA5/vynil-app-player-RVNQBFTSA5-w1600.jpg"
                 }, {
                     title: `song b`,
                     artist: `artist b`,

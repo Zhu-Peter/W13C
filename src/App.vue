@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <SongPlaylist/>
+    <songNowPlaying/>
   </div>
 </template>
 
 <script>
-import SongPlaylist from './components/SongPlaylist.vue';
+import songNowPlaying from './components/songNowPlaying.vue';
 
 export default {
   name: 'App',
   components: {
-    SongPlaylist
+    songNowPlaying
   }
 }
 </script>
@@ -22,5 +22,6 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   margin-top: 60px;
+  text-align: center;
 }
 </style>

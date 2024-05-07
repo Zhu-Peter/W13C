@@ -2,8 +2,7 @@
     <div id="playlist">
         <div id="playlist_container">
             <div id="controls_container">
-                <h1>Now Playing</h1>
-                <img :src="songImage" alt="(image)" />
+                <img :src="currentSong.image_url" alt="(image)" style="width: 300px; height: 300px;object-fit: cover;"/>
                 <!-- <img src="@/assets/logo.png" alt="" /> -->
                 <h2>{{ currentSong.title }}</h2>
                 <h3>{{ currentSong.artist }}</h3>
@@ -65,9 +64,8 @@ export default {
                 title: `unknown song`,
                 artist: `unknown artist`,
                 song_id: 0,
-                image_url: "@/assets/logo.png"
+                image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_nYt8e5FxB_LWM9e4bvAB0WoRRNtcDsR3jg-gw9guA&s"
             },
-            songImage: "@/assets/logo.png",
         }
     },
     methods: {
