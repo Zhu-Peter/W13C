@@ -45,7 +45,7 @@
                     </div>
                 </div>
                 <div id="list_container">
-                    <SongDatabase @chooseSong="onChooseSong" />
+                    <SongDatabase :currentSong="currentSong.song_id" @chooseSong="onChooseSong" />
                 </div>
             </div>
         </div>

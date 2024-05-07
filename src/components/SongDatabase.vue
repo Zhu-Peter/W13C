@@ -1,7 +1,7 @@
 <template>
     <div id="list_container">
-        <div v-for="song in songs" v-bind:key="song.song_id" @click="chooseSong">
-            <div class="song_container">
+        <div v-for="song in songs" v-bind:key="song.song_id" @click="chooseSong(song.song_id)">
+            <div class="song_container" ref="song" @mouseover="songBackground(song.song_id)">
                 <span class="id">
                     {{ song.song_id }}
                 </span>
@@ -80,9 +80,21 @@ export default {
         }
     },
     methods: {
-        chooseSong: function(){
-            this.$emit(chooseSong, this.songs[1])
+        chooseSong: function(song){
+            this.$emit(`chooseSong`, this.songs[song-1])
+        },
+        songBackground: function(song){
+            // console.log(this.$refs.song[song-1])
+            this.$refs.song[song-1].style.backgroundColor = "lightgray"
+            for(let i=0; i<this.$refs.song.length;i++){
+                if(!(i == song-1)){
+                    this.$refs.song[i].style.backgroundColor = "white"
+                }
+            }
         }
+    },
+    mounted() {
+        // this.songBackground();
     },
 }
 </script>
@@ -98,7 +110,9 @@ export default {
     scrollbar-width: 0px;
 }
 .song_container{
-    padding-top: 20px;
+    padding-top: 15px;
+    margin-top: 5px;
+    cursor: pointer;
 }
 .title{
     margin-left: 30px;
