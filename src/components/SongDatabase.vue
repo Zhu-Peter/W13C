@@ -28,53 +28,53 @@ export default {
                     title: `song a`,
                     artist: `artist a`,
                     song_id: 1,
-                    image_url: "https://www.reshot.com/preview-assets/illustrations/RVNQBFTSA5/vynil-app-player-RVNQBFTSA5-w1600.jpg"
+                    image_url: "music2.png"
                 }, {
                     title: `song b`,
                     artist: `artist b`,
                     song_id: 2,
-                    image_url: "@/assets/logo.png"
+                    image_url: "music.png"
                 }, {
                     title: `song c`,
                     artist: `artist c`,
                     song_id: 3,
-                    image_url: "@/assets/logo.png"
+                    image_url: "music2.png"
                 }, {
                     title: `song d`,
                     artist: `artist d`,
                     song_id: 4,
-                    image_url: "@/assets/logo.png"
+                    image_url: "logo.png"
                 }, {
                     title: `song e`,
                     artist: `artist e`,
                     song_id: 5,
-                    image_url: "@/assets/logo.png"
+                    image_url: "music.png"
                 },
                 {
                     title: `song f`,
                     artist: `artist f`,
                     song_id: 6,
-                    image_url: "@/assets/logo.png"
+                    image_url: "music2.png"
                 }, {
                     title: `song g`,
                     artist: `artist g`,
                     song_id: 7,
-                    image_url: "@/assets/logo.png"
+                    image_url: "music.png"
                 }, {
                     title: `song h`,
                     artist: `artist h`,
                     song_id: 8,
-                    image_url: "@/assets/logo.png"
+                    image_url: "music2.png"
                 }, {
                     title: `song i`,
                     artist: `artist i`,
                     song_id: 9,
-                    image_url: "@/assets/logo.png"
+                    image_url: "logo.png"
                 }, {
                     title: `song j`,
                     artist: `artist j`,
                     song_id: 10,
-                    image_url: "@/assets/logo.png"
+                    image_url: "music.png"
                 },
             ]
         }

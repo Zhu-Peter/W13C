@@ -4,7 +4,8 @@
             <div id="controls_container">
                 <h1 style="color: red;" v-if="currentSong.song_id == 0">Please Pick a song</h1>
                 <div v-if="!(currentSong.song_id == 0)">
-                    <img :src="currentSong.image_url" alt="(image)" style="width: 300px; height: 300px;object-fit: cover;"/>
+                    <!-- <img :src="currentSong.image_url" alt="(image)" style="width: 300px; height: 300px;object-fit: cover;"/> -->
+                    <img :src="require(`@/assets/${currentSong.image_url}`)" alt="(image)" style="width: 300px; height: 300px;object-fit: cover;"/>
                     <!-- <img src="@/assets/logo.png" alt="" /> -->
                     <h2>{{ currentSong.title }}</h2>
                     <h3>{{ currentSong.artist }}</h3>
@@ -67,7 +68,7 @@ export default {
                 title: `unknown song`,
                 artist: `unknown artist`,
                 song_id: 0,
-                image_url: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRo_nYt8e5FxB_LWM9e4bvAB0WoRRNtcDsR3jg-gw9guA&s"
+                image_url: "logo.png"
             },
         }
     },
