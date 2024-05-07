@@ -2,10 +2,13 @@
     <div id="playlist">
         <div id="playlist_container">
             <div id="controls_container">
-                <img :src="currentSong.image_url" alt="(image)" style="width: 300px; height: 300px;object-fit: cover;"/>
-                <!-- <img src="@/assets/logo.png" alt="" /> -->
-                <h2>{{ currentSong.title }}</h2>
-                <h3>{{ currentSong.artist }}</h3>
+                <h1 style="color: red;" v-if="currentSong.song_id == 0">Please Pick a song</h1>
+                <div v-if="!(currentSong.song_id == 0)">
+                    <img :src="currentSong.image_url" alt="(image)" style="width: 300px; height: 300px;object-fit: cover;"/>
+                    <!-- <img src="@/assets/logo.png" alt="" /> -->
+                    <h2>{{ currentSong.title }}</h2>
+                    <h3>{{ currentSong.artist }}</h3>
+                </div>
                 <div id="controls_bar">
                     <div id="btn_back" class="button">
                         <svg width="24px" height="24px" viewBox="0 0 24 24"

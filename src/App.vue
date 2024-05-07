@@ -1,16 +1,16 @@
 <template>
   <div id="app">
-    <songNowPlaying/>
+    <SongDisplay/>
   </div>
 </template>
 
 <script>
-import songNowPlaying from './components/songNowPlaying.vue';
+import SongDisplay from './components/SongDisplay.vue';
 
 export default {
   name: 'App',
   components: {
-    songNowPlaying
+    SongDisplay
   }
 }
 </script>
